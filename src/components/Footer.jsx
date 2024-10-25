@@ -48,17 +48,17 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
             <address className="text-gray-400 not-italic">
-              <p>Santoshpur Station </p>
-              <p>Santoshpur, Mahestala,</p>
-              <p>Kolkata, West Bengal 700141, India</p>
+              <p>Bidhangarh,</p>
+              <p>Santoshpur,</p>
+              <p>Kolkata, West Bengal 700066, India</p>
             </address>
             <p className="mt-4">
-              <a href="mailto:query@rezime.in" className="text-gray-400 hover:text-white transition-colors">
-                query@rezime.in
+              <a href="mailto:hr@rezime.in" className="text-gray-400 hover:text-white transition-colors">
+                hr@rezime.in
               </a>
             </p>
             {/* <p>
-              <a href="tel:+919876543210" className="text-gray-400 hover:text-white transition-colors">
+              <a href="tel:+91999999999" className="text-gray-400 hover:text-white transition-colors">
                 +91 98765 43210
               </a>
             </p> */}
