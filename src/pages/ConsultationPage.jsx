@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const ConsultationPage = () => {
   const [formData, setFormData] = useState({
@@ -54,6 +54,10 @@ const ConsultationPage = () => {
       [name]: value
     }));
   };
+
+  useEffect(() => {
+    document.title = 'Free Consultation Session | Expert Guidance for Your Coding Journey | Rezime Edtech'
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50 pt-[5rem] py-12 px-4 sm:px-6 lg:px-8">

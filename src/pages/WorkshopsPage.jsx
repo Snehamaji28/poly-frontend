@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React, { useEffect, useState } from 'react'; 
 import { Calendar, Clock, MapPin, ChevronLeft, ChevronRight, School } from 'lucide-react';
 
 const pastWorkshops = [
@@ -32,6 +32,10 @@ const PastWorkshopSlider = () => {
       prev === pastWorkshops.length - 1 ? 0 : prev + 1
     );
   };
+
+  useEffect(() => {
+    document.title = 'Free Coding Workshops | Rezime Edtech'
+  }, []);
 
   const prevSlide = () => {
     setCurrentIndex((prev) => 

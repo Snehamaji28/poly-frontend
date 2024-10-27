@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     quote: "The free workshops gave me confidence in coding that I never had before. Rezime's support is amazing, and I can't wait for the full courses to launch soon.",
-    author: "Sneha Maji",
+    author: "Raju Jana",
     company: "Polytechnic, Purba medinipur",
     image: "/placeholder.svg?height=100&width=100"
   }

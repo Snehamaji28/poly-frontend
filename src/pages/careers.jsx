@@ -1,6 +1,4 @@
-"use client"
-
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { 
   Code, Paintbrush, Wrench, PenTool, Headphones, GraduationCap, 
   Megaphone, Coffee, Cpu, BarChart3, Layers, Mail
@@ -9,6 +7,10 @@ import {
 export default function HiringPortal() {
   const [activeTab, setActiveTab] = useState('full-time')
   const [selectedJob, setSelectedJob] = useState(null)
+
+  useEffect(() => {
+    document.title = 'Careers at Rezime Edtech | We are Hiring'
+  }, []);
 
   const jobs = {
     'full-time': [
