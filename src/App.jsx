@@ -5,11 +5,12 @@ import WorkshopPage from './pages/WorkshopsPage';
 import ComingSoon from './components/ComingSoon';
 import HomePage from './pages/HomePage';
 import AppLayout from './layout/AppLayout';
-import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
 import TermsAndConditions from './pages/TermsAndConditions';
 import CertificateValidatePage from './pages/CertificateValidatePage';
 import Careers from './pages/careers';
 import ErrorPage from './pages/ErrorPage';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 export default function App() {
   const router = createBrowserRouter([
@@ -21,6 +22,14 @@ export default function App() {
         {
           path: "/",
           element: <HomePage />,
+        },
+        {
+          path: "/contact",
+          element: <Contact/>,
+        },
+        {
+          path: "/about",
+          element: <About />,
         },
         {
           path: "/career-consultation",
