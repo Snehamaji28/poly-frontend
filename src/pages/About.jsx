@@ -1,9 +1,32 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { BookOpen, Users, Award, Target } from "lucide-react";
 
 const AboutUs = () => {
   return (
     <div className="pt-16 bg-gray-50">
+      {/* SEO Metadata */}
+      <Helmet>
+        <title>About Us - Rezime Edtech</title>
+        <meta
+          name="description"
+          content="Rezime Edtech empowers polytechnic students in West Bengal by providing coding skills, career guidance, and affordable education to build a better future."
+        />
+        <meta
+          name="keywords"
+          content="Rezime Edtech, coding workshops, career guidance, polytechnic education, coding awareness, affordable coding courses, West Bengal students"
+        />
+        <meta name="author" content="Rezime Edtech" />
+        <meta property="og:title" content="About Rezime Edtech" />
+        <meta
+          property="og:description"
+          content="Learn how Rezime Edtech is bridging the coding skill gap for polytechnic students in West Bengal with workshops, career guidance, and community support."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://rezime.in/about" />
+        <meta property="og:image" content="https://rezime.in/LogoModern.png" />
+      </Helmet>
+
       {/* Hero Section */}
       <div className="bg-indigo-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,45 +194,10 @@ const AboutUs = () => {
             href="https://forms.gle/KX16pa8iL7LDRs826"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-indigo-600 px-8 py-3 rounded-md font-semibold hover:bg-indigo-50 transition duration-300"
+            className="bg-white text-indigo-600 px-6 py-3 rounded-lg shadow-lg font-semibold hover:bg-indigo-50"
           >
             Get Started
           </a>
-        </div>
-      </div>
-
-      {/* College Partnership Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">
-            Partner With Us
-          </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Bring coding awareness to your campus! We organize comprehensive
-            workshops and career guidance sessions for polytechnic colleges
-            across West Bengal. Let's work together to empower your students
-            with essential tech skills.
-          </p>
-          <div className="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto">
-            <h3 className="text-2xl font-semibold mb-4 text-indigo-600">
-              What We Offer:
-            </h3>
-            <ul className="text-left text-gray-600 mb-6 space-y-2">
-              <li>• Professional coding awareness workshops</li>
-              <li>• Structured career guidance sessions</li>
-              <li>• Industry expert interactions</li>
-              <li>• Hands-on coding demonstrations</li>
-              <li>• Student mentoring programs</li>
-            </ul>
-            <a
-              href="https://forms.gle/inviteForm123"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-indigo-700 transition duration-300"
-            >
-              Invite Us to Your Campus
-            </a>
-          </div>
         </div>
       </div>
     </div>
