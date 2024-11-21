@@ -5,61 +5,61 @@ import { Link } from 'react-router-dom';
 const services = [
   {
     title: 'Free Career Consultation',
-    description: 'One-on-one guidance from industry experts to help you plan your tech career path and prepare for placements.',
+    description: 'Guidance from experienced mentors to help Polytechnic students shape their tech careers and prepare for placements.',
     icon: GraduationCap,
-    link: '/career-consultation'
+    link: '/career-consultation',
   },
   {
-    title: 'Doubt Support',
-    description: 'Get your programming doubts solved 24/7 by experienced mentors. Never let confusion stop your learning journey.',
-    icon: MessagesSquare,
-    link: '/doubt-support'
-  },
-  {
-    title: 'Free Awareness Workshops',
-    description: 'Regular workshops at polytechnic colleges to spread awareness about coding opportunities and industry requirements.',
+    title: 'Coding Awareness Workshops',
+    description: 'Interactive sessions to highlight coding opportunities and bridge the gap between academic learning and industry demands.',
     icon: Users,
-    link: '/workshops'
+    link: '/workshops',
   },
   {
-    title: 'Structured Learning Path',
-    description: 'Well-planned, affordable courses designed specifically for polytechnic students, taught by trusted industry mentors.',
+    title: '24/7 Doubt Support',
+    description: 'Resolve programming doubts anytime with the help of dedicated mentors. Empowering uninterrupted learning.',
+    icon: MessagesSquare,
+    link: '/doubt-support',
+  },
+  {
+    title: 'Affordable Learning Paths',
+    description: 'Specialized courses designed for Polytechnic students, focusing on essential coding and development skills.',
     icon: BookOpen,
-    link: '/courses'
+    link: '/courses',
   },
   {
     title: 'Practice Platform',
-    description: 'Free coding platform with hundreds of practice problems to build your programming skills from scratch.',
+    description: 'Access free practice problems to build and strengthen programming skills, from beginner to advanced levels.',
     icon: PenTool,
-    link: '/practice'
+    link: '/practice',
   },
   {
-    title: 'College Partnerships',
-    description: 'We collaborate with polytechnic colleges to integrate coding education into the regular curriculum.',
+    title: 'Collaborate With Us',
+    description: 'Partner with Rezime Edtech to foster a coding culture in your college and improve student outcomes.',
     icon: School,
-    link: 'https://forms.gle/KX16pa8iL7LDRs826'
-  }
+    link: 'https://forms.gle/KX16pa8iL7LDRs826',
+  },
 ];
 
-export default function Services() {
+export default function OurSolution() {
   return (
     <div className="py-12 bg-gradient-to-br from-violet-200 via-blue-200 to-cyan-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Our Services</h2>
+          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Our Solution</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Supporting West Bengal Polytechnic Students
+            Promoting a Thriving Coding Culture in Polytechnic Colleges
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            We're committed to making quality coding education accessible to every polytechnic student in West Bengal.
+            Rezime Edtech offers targeted services to empower Polytechnic students with coding skills, career support, and industry-aligned learning opportunities.
           </p>
         </div>
 
         <div className="mt-10">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
-              <Link 
-                key={service.title} 
+              <Link
+                key={service.title}
                 to={service.link}
                 className="group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl"
               >
@@ -87,18 +87,6 @@ export default function Services() {
               </Link>
             ))}
           </div>
-
-          {/* Call to Action
-          <div className="mt-12 text-center">
-            <p className="text-base text-gray-600 mb-4">
-              Help us to spread coding awareness by Inviting us to your College Campus
-            </p>
-            <Link to="/get-started"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              Support Our Cause
-            </Link>
-          </div> */}
         </div>
       </div>
     </div>
