@@ -7,6 +7,7 @@ import BlogSection from '../components/BlogSection';
 import Hiring from '../components/Hiring';
 import Testimonials from '../components/Testimonials';
 import CallToAction from '../components/CallToAction';
+import WhoWeAre from '../components/WhoWeAre';
 
 function HomePage() {
   return (
@@ -39,6 +40,7 @@ function HomePage() {
       </Helmet>
 
       <Hero />
+      <WhoWeAre/>
       <Services />
       <MentorCompanies />
       <CallToAction />
