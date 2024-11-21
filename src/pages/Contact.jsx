@@ -54,7 +54,7 @@ export default function ContactUs() {
   return (
     <>
       <Helmet>
-        <title>Contact Rezime Edtech | Coding Education & Tech Partnerships</title>
+        <title>Contact - Rezime Edtech | Coding Education & Tech Partnerships</title>
         <meta name="description" content="Connect with Rezime Edtech for campus visits, partnerships, and sponsorship opportunities. Join us in empowering polytechnic students with coding education across West Bengal." />
         <meta name="keywords" content="coding education, tech partnerships, campus visits, polytechnic colleges, West Bengal, coding awareness, tech sponsorship, Rezime Edtech" />
         
