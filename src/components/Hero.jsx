@@ -5,26 +5,32 @@ import { Link } from 'react-router-dom';
 const slides = [
   {
     type: "fact",
-    title: "Polytechnic Reality Check",
-    description: "Only 8% of West Bengal Polytechnic students secure technical roles in their first job, while 92% of tech companies require basic coding skills during recruitment.",
-    color: "from-purple-500 via-pink-500 to-red-500"
-  },
-  {
-    type: "quote",
-    quote: "Coding is not just a skill, it's the foundation of digital India. Our students must embrace it to build tomorrow's technology.",
-    author: "Narayana Murthy, Infosys Founder",
-    color: "from-indigo-600 to-indigo-900"
-  },
-  {
-    type: "fact",
     title: "Skills Gap Crisis",
     description: "85% of West Bengal Polytechnic students graduate without writing a single line of code, despite Computer Science being their major.",
     color: "from-blue-600 to-blue-900"
   },
   {
     type: "quote",
-    quote: "The future belongs to those who code. Every student deserves the opportunity to learn this essential skill.",
-    author: "Nandan Nilekani, Infosys Co-founder",
+    quote: "The best way to predict the future is to code it. Technology is not just about writing lines, it's about creating solutions.",
+    author: "Grace Hopper, Computer Science Pioneer",
+    color: "from-purple-600 to-purple-900"
+  },
+  {
+    type: "fact",
+    title: "Polytechnic Reality Check",
+    description: "Only 8% of West Bengal Polytechnic students secure technical roles in their first job, while 92% of tech companies require basic coding skills during recruitment.",
+    color: "from-purple-500 via-pink-500 to-red-500"
+  },
+  {
+    type: "quote",
+    quote: "Learning to code is like learning a superpower that lets you transform ideas into reality with just a few keystrokes.",
+    author: "Kent Beck, Extreme Programming Pioneer",
+    color: "from-indigo-600 to-indigo-900"
+  },
+  {
+    type: "quote",
+    quote: "Code is poetry in motion. Every function is a stanza, every algorithm a beautiful narrative of problem-solving.",
+    author: "Martin Fowler, Software Design Expert",
     color: "from-violet-600 to-violet-900"
   },
   {
@@ -34,12 +40,6 @@ const slides = [
     color: "from-green-600 to-green-900"
   },
   {
-    type: "quote",
-    quote: "Let's empower our youth with the right skills.",
-    author: "Dr. APJ Abdul Kalam",
-    color: "from-purple-600 to-purple-900"
-  },
-  {
     type: "fact",
     title: "Industry Gap",
     description: "While Bengal's IT sector is growing at 12% annually, only 5% of polytechnic graduates meet industry coding standards.",
@@ -47,11 +47,12 @@ const slides = [
   },
   {
     type: "quote",
-    quote: "Bengal's polytechnic students have immense potential. With proper coding education, they can lead India's technical revolution.",
-    author: "Azim Premji, Wipro Founder",
+    quote: "Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.",
+    author: "Patrick McKenzie, Software Engineer",
     color: "from-rose-600 to-rose-900"
   }
 ];
+
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
