@@ -3,15 +3,13 @@ import { Helmet } from "react-helmet"
 import { 
   Mail, 
   MapPin, 
-  Phone, 
   Globe, 
   School, 
   Briefcase, 
-  Users, 
-  Award, 
   Target, 
   Megaphone 
 } from "lucide-react"
+import { submitForm } from "../services/api"
 
 export default function ContactUs() {
   const formRef = useRef(null)
@@ -45,16 +43,30 @@ export default function ContactUs() {
     }))
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    try {
+      const res = await submitForm(formData);
+      const data = res.data;
+      if(res.status === 201){
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
+        });  
+      }
+
+    } catch (error) {
+      console.log("Error while submit query",error);
+    }
   }
 
   return (
     <>
       <Helmet>
-        <title>Contact - Rezime Edtech | Coding Education & Tech Partnerships</title>
+        <title>Contact Rezime Edtech | Coding Education & Tech Partnerships</title>
         <meta name="description" content="Connect with Rezime Edtech for campus visits, partnerships, and sponsorship opportunities. Join us in empowering polytechnic students with coding education across West Bengal." />
         <meta name="keywords" content="coding education, tech partnerships, campus visits, polytechnic colleges, West Bengal, coding awareness, tech sponsorship, Rezime Edtech" />
         
